@@ -62,4 +62,14 @@ contract DAMM {
     function setFee(uint256 poolId, uint256 newFee) external {
         pools[poolId].fee = newFee;
     }
+
+    
+
+    function getPoolCount() external view returns (uint256) {
+        return pools.length;
+    }
+
+    function getPoolById(uint256 poolId) external view returns (address[] memory tokens, uint256 fee) {
+        return (pools[poolId].tokens, pools[poolId].fee);
+    }
 }

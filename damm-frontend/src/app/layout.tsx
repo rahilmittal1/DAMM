@@ -1,20 +1,27 @@
-import '@rainbow-me/rainbowkit/styles.css'
-import { Providers } from './providers'
+'use client';
 
-export const metadata = {
-  title: 'zkSync + wagmi + RainbowKit + Next.js',
-}
+import { Inter } from 'next/font/google';
+import '@rainbow-me/rainbowkit/styles.css';
+import { RainbowKitProvider } from '@rainbow-me/rainbowkit';
+import { WagmiConfig } from 'wagmi';
+import { config, chains } from '../wagmi';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
+      <body className={inter.className}>
+        <WagmiConfig config={config}>
+          <RainbowKitProvider chains={chains}>
+            {children}
+          </RainbowKitProvider>
+        </WagmiConfig>
       </body>
     </html>
-  )
+  );
 }
