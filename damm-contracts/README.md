@@ -43,8 +43,6 @@ Important: ZKsync In-memory Node currently supports only the L2 node. If contrac
 - [Docs](https://docs.zksync.io/build)
 - [Official Site](https://zksync.io/)
 - [GitHub](https://github.com/matter-labs)
-- [Twitter](https://twitter.com/zksync)
-- [Discord](https://join.zksync.dev/)
 
 ## License
 
