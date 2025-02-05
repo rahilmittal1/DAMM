@@ -65,7 +65,7 @@ export default function Home() {
     <main className="min-h-screen p-24">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-between items-center mb-12">
-          <h1 className="text-4xl font-bold">DAMM 💧😋😋</h1>
+          <h1 className="text-4xl font-bold">DAMM 💧💉</h1>
           <ConnectButton />
         </div>
 
