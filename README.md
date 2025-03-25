@@ -1,1 +1,1 @@
-Building the most handsom adaptive decentralized market maker you will ever see 😃
+Building the most handsome adaptive decentralized market maker you will ever see 😃
